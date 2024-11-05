@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARTAN</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Google Maps API script with callback to initializeMap -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI0O97a-pTufVeKuGlkLBnGleLTKwjDwo&callback=initializeMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>SPARTAN</h1>
+
+        <!-- Real-Time Status Panel -->
+        <div class="status-panel">
+            <h2>Real-Time Status</h2>
+            <p><strong>Current State:</strong> <span id="state">Loading...</span></p>
+            <p><strong>Current Action:</strong> <span id="action">Loading...</span></p>
+            <p><strong>Reward:</strong> <span id="reward">Loading...</span></p>
+        </div>
+
+        <!-- UAV Movement Map Panel -->
+        <div class="map-panel">
+            <h2>UAV Movement Map</h2>
+            <div id="map"></div> <!-- Google Map -->
+            <canvas id="movementMap"></canvas> <!-- Canvas Overlay -->
+        </div>
+
+        <!-- Real-Time Metrics Chart for Reward -->
+        <div class="chart-panel">
+            <h2>Reward Over Time</h2>
+            <canvas id="rewardChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Event Log Panel -->
+        <div class="log-panel">
+            <h2>Event Log</h2>
+            <ul id="event-log">
+                <li>Loading events...</li>
+            </ul>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <script src="/frontend/app.js"></script>
+    </div>
+</body>
+</html>

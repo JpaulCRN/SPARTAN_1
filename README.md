@@ -21,10 +21,13 @@ This is an early demo of the **SPARTAN** project, focusing on enhancing Unmanned
 
 - **Python** installed on your system (version 3.x recommended)
 - Optional: Create and activate a virtual environment
+- **Google Maps API Key**: To use the mapping features in this demo, you will need a Google Maps API key. [Get your API key here](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 ### Installation
 
 1. **Clone the Repository**  
+   Open a terminal and run:
    ```bash
    git clone https://github.com/JpaulCRN/SPARTAN_1.git
    cd SPARTAN_1
+
